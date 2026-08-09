@@ -1,0 +1,4 @@
+outcome,transform,treat,controls,n,wild_p,coef,se
+agri_grid_gwh,asinh,kusum_intensity_per_kha,log_gdp_pc,84,0.382,-0.017084770371550456,0.01136062613055172
+tubewells,log,kusum_intensity_per_kha,log_gdp_pc,106,0.0218,-0.02290923944439884,0.003508380252146644
+gw_stage_step,asinh,kusum_intensity_per_kha,log_gdp_pc,165,0.7805,-0.0008863262852662508,0.002725573272665765

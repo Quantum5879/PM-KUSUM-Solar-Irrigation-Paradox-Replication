@@ -1,0 +1,16 @@
+\begin{tabular}{lrrrrl}
+\toprule
+test & beta & se & pvalue & n & note \\
+\midrule
+cross_section_dose_gw & -0.016 & 0.101 & 0.877 & 27 & FY2024 terminal dose; no back-cast path \\
+FE_component_B_tubewells & -0.014 & 0.003 & 0.000 & 106 & TWFE with income; component-separated treatment \\
+FE_component_C_tubewells & -0.472 & 0.374 & 0.206 & 106 & TWFE with income; component-separated treatment \\
+FE_component_B_gw & 0.042 & 0.023 & 0.071 & 165 & TWFE with income; component-separated treatment \\
+FE_component_C_gw & 0.029 & 1.720 & 0.987 & 165 & TWFE with income; component-separated treatment \\
+continuous_interaction_kusum_intensity_per_kha & -0.008 & 0.015 & 0.592 & 106 & continuous gw_stage and discom interactions (not sparse category) \\
+continuous_interaction_kusum_x_gw & -0.000 & 0.000 & 0.538 & 106 & continuous gw_stage and discom interactions (not sparse category) \\
+continuous_interaction_kusum_x_discom & -0.017 & 0.022 & 0.434 & 106 & continuous gw_stage and discom interactions (not sparse category) \\
+FE_gw_non_interpolated & 0.049 & 0.051 & 0.334 & 109 & assessment years only (2020/22/23/24) \\
+placebo_FE_canal & -0.008 & 0.006 & 0.172 & 119 & canal area should be weakly related if solar-pump rebound is GW-specific \\
+\bottomrule
+\end{tabular}

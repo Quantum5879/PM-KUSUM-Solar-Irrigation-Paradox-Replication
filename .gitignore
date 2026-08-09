@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Local / editor
+.cursor/
+.claude/
+*.log
+Thumbs.db
+.DS_Store
+
+# Superseded local archives (not part of replication)
+_archive/
+FINAL_SUBMISSION_PACKAGE/
+outputs/EnergyPolicy_READY/
+outputs/EnergyPolicy_READY_*/
+
+# Keep result tables and executive PNGs; drop heavy PDFs and Word drafts
+outputs/figures/**/*.pdf
+outputs/figures/**/*.svg
+outputs/figures/**/*.html
+outputs/manuscript*.docx
+outputs/Highlights*.docx
+outputs/reports/*.docx
+
+# OneDrive / temp
+~$*
+*.tmp

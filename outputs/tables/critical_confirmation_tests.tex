@@ -1,0 +1,17 @@
+\begin{tabular}{lrrrrrrl}
+\toprule
+test & beta & se & pvalue & F & n & n_states & note \\
+\midrule
+baseline_IV & 0.102 & 0.033 & 0.002 & 20.581 & 120 & 20 & GHI=ghi_annual_obs \\
+LOO_drop_Jharkhand & 0.074 & 0.198 & 0.709 & 2.075 & 114 & 19 & delta_beta=-0.0286 \\
+LOO_drop_Odisha & 0.122 & 0.037 & 0.001 & 19.458 & 114 & 19 & delta_beta=0.0195 \\
+LOO_drop_Maharashtra & 0.087 & 0.031 & 0.005 & 992.632 & 114 & 19 & delta_beta=-0.0155 \\
+LOO_drop_Telangana & 0.089 & 0.031 & 0.005 & 20.889 & 114 & 19 & delta_beta=-0.0138 \\
+LOO_drop_Bihar & 0.092 & 0.033 & 0.006 & 19.797 & 114 & 19 & delta_beta=-0.0107 \\
+drop_NW_belt_PB_HR_RJ & 0.101 & 0.036 & 0.005 & 19.266 & 102 & 17 & excludes canonical over-exploited solar adopters \\
+winsor_1_99_intensity & 0.142 & 0.051 & 0.006 & 12.212 & 120 & 20 & clip [0.000,34.755] \\
+intensity_per_1000_pumpsets & 0.051 & 0.015 & 0.001 & 39.826 & 120 & 20 & alt denominator \\
+intensity_per_cropped_ha & -1.759 & 2.843 & 0.536 & 0.417 & 120 & 20 & alt denominator \\
+FE_tubewell_coef_stability & -0.023 & 0.004 & 0.000 & NaN & 106 & 23 & short=-0.0226 long=-0.0229 R2 0.998->0.998 rel_shift=0.013 \\
+\bottomrule
+\end{tabular}

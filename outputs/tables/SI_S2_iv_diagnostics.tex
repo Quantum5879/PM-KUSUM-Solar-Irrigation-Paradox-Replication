@@ -1,0 +1,15 @@
+\begin{tabular}{llrrrrrl}
+\toprule
+spec & outcome & beta & se & pvalue & first_stage_F & n & weak_IV_flag \\
+\midrule
+primary_interact & gw_stage_step & 0.102 & 0.033 & 0.002 & 20.581 & 120 & OK \\
+variant_diesel_alone & gw_stage_step & 0.116 & 0.036 & 0.001 & 2.098 & 153 & WEAK \\
+primary_tubewells & tubewells & 0.402 & 9.672 & 0.967 & 28.370 & 90 & OK \\
+primary_elec & agri_grid_gwh & -64.786 & 40.463 & 0.109 & 222.540 & 60 & OK \\
+robust_gw_linear & gw_stage_linear & 0.079 & 0.027 & 0.004 & 20.581 & 120 & OK \\
+component_B & gw_stage_step & 0.056 & 0.017 & 0.001 & 54.297 & 120 & OK \\
+component_C & gw_stage_step & -11.743 & 11.174 & 0.293 & 1.406 & 120 & WEAK \\
+non_interpolated_gw & gw_stage_step & 0.115 & 0.047 & 0.013 & 7.507 & 80 & WEAK \\
+LOO_sign_stability & gw_stage_step & 0.102 & 0.008 & NaN & 20.581 & 114 & sign+=100% beta_range=[0.074,0.122] \\
+\bottomrule
+\end{tabular}

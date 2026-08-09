@@ -1,0 +1,14 @@
+\begin{tabular}{lllrrrrrll}
+\toprule
+outcome & treatment & instrument_col & beta_treat & se & pvalue & first_stage_F & n & spec & instrument \\
+\midrule
+gw_stage_step & kusum_intensity_per_kha & iv_interact & 0.102 & 0.033 & 0.002 & 20.581 & 120 & primary_interact & iv_interact (GHI=ghi_annual_obs) \\
+gw_stage_step & kusum_intensity_per_kha & iv_diesel & 0.116 & 0.036 & 0.001 & 2.098 & 153 & variant_diesel_alone & iv_diesel (GHI=ghi_annual_obs) \\
+tubewells & kusum_intensity_per_kha & iv_interact & 0.402 & 9.672 & 0.967 & 28.370 & 90 & primary_tubewells & iv_interact (GHI=ghi_annual_obs) \\
+agri_grid_gwh & kusum_intensity_per_kha & iv_interact & -64.786 & 40.463 & 0.109 & 222.540 & 60 & primary_elec & iv_interact (GHI=ghi_annual_obs) \\
+gw_stage_linear & kusum_intensity_per_kha & iv_interact & 0.079 & 0.027 & 0.004 & 20.581 & 120 & robust_gw_linear & iv_interact (GHI=ghi_annual_obs) \\
+gw_stage_step & kusum_intensity_B_per_kha & iv_interact & 0.056 & 0.017 & 0.001 & 54.297 & 120 & component_B & iv_interact (GHI=ghi_annual_obs) \\
+gw_stage_step & kusum_intensity_C_per_kha & iv_interact & -11.743 & 11.174 & 0.293 & 1.406 & 120 & component_C & iv_interact (GHI=ghi_annual_obs) \\
+gw_stage_step & kusum_intensity_per_kha & iv_interact & 0.115 & 0.047 & 0.013 & 7.507 & 80 & non_interpolated_gw & iv_interact (GHI=ghi_annual_obs) \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it as below."
+title: "PM-KUSUM Solar Irrigation Paradox — Replication Package"
+authors:
+  - family-names: Dagar
+    given-names: Harsh
+    orcid: "https://orcid.org/0009-0008-7394-130X"
+    email: harshdagar5879@gmail.com
+    affiliation: "ICAR-National Dairy Research Institute, Karnal"
+  - family-names: Bhandari
+    given-names: Gunjan
+    orcid: "https://orcid.org/0000-0001-6004-7642"
+    affiliation: "ICAR-National Dairy Research Institute, Karnal"
+version: "1.0.0"
+date-released: "2026-08-09"
+license: MIT
+repository-code: "https://github.com/Quantum5879/PM-KUSUM-Solar-Irrigation-Paradox-Replication"
+type: software
+abstract: >-
+  Replication package for the Energy Policy manuscript on India's PM-KUSUM
+  solar irrigation programme: state-year panel, scripts (p3_00–p3_15), and
+  result tables for TWFE, IV, carbon rebound bridge, and confirmatory tests.
+keywords:
+  - PM-KUSUM
+  - solar irrigation
+  - groundwater
+  - rebound effect
+  - instrumental variables
+  - India
+  - replication

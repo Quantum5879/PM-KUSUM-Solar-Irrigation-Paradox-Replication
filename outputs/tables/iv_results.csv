@@ -1,0 +1,9 @@
+outcome,treatment,instrument_col,beta_treat,se,pvalue,first_stage_F,n,spec,instrument
+gw_stage_step,kusum_intensity_per_kha,iv_interact,0.102323604178707,0.03330227101388926,0.002122230841497874,20.58081415675134,120,primary_interact,iv_interact (GHI=ghi_annual_obs)
+gw_stage_step,kusum_intensity_per_kha,iv_diesel,0.11556018468407699,0.03636133187406806,0.0014824029527693572,2.097594385584547,153,variant_diesel_alone,iv_diesel (GHI=ghi_annual_obs)
+tubewells,kusum_intensity_per_kha,iv_interact,0.40152075705844936,9.671631145438916,0.9668850884332076,28.370170087010845,90,primary_tubewells,iv_interact (GHI=ghi_annual_obs)
+agri_grid_gwh,kusum_intensity_per_kha,iv_interact,-64.78623409831198,40.46307007395807,0.1093503249837624,222.54038525682117,60,primary_elec,iv_interact (GHI=ghi_annual_obs)
+gw_stage_linear,kusum_intensity_per_kha,iv_interact,0.0792301980507224,0.02733356449073793,0.0037478342920165275,20.58081415675134,120,robust_gw_linear,iv_interact (GHI=ghi_annual_obs)
+gw_stage_step,kusum_intensity_B_per_kha,iv_interact,0.05645207287630383,0.01656869559489377,0.0006564443491567928,54.29735181510495,120,component_B,iv_interact (GHI=ghi_annual_obs)
+gw_stage_step,kusum_intensity_C_per_kha,iv_interact,-11.742949817388762,11.174004038268587,0.29329675233929886,1.406218542529331,120,component_C,iv_interact (GHI=ghi_annual_obs)
+gw_stage_step,kusum_intensity_per_kha,iv_interact,0.11548062594273917,0.04663638067202435,0.01327921990833314,7.507019115631085,80,non_interpolated_gw,iv_interact (GHI=ghi_annual_obs)

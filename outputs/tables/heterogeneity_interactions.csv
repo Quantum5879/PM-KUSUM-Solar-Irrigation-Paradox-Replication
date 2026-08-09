@@ -1,0 +1,5 @@
+,by_gw_stress,by_discom
+kusum_intensity_per_kha,-25.36694775050352,2.6195211536813447
+kusum_intensity_per_kha:C(gw_stress_cat)[T.safe],5.6721262322327455,
+kusum_intensity_per_kha:C(gw_stress_cat)[T.semi_critical],-792.0777295768398,
+kusum_intensity_per_kha:discom_health,,-27.550466452990676

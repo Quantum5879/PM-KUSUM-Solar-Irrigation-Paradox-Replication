@@ -1,0 +1,43 @@
+{
+  "_comment": "Pre-registered grids. NOTHING is hardcoded in scripts; every tunable is searched over these ranges and the winner is logged to outputs/paper3/reports/tuning_log.json with its CV metric.",
+  "seed": 1502,
+  "cv_folds": 5,
+
+  "causal_forest": {
+    "n_estimators": [500, 1000, 2000],
+    "min_samples_leaf": [5, 10, 25, 50],
+    "max_depth": [null, 3, 5, 10],
+    "max_features": ["sqrt", 0.3, 0.5],
+    "honest": [true],
+    "selection_metric": "negative_mse_cross_fit"
+  },
+
+  "dml_nuisance_models": {
+    "_comment": "First-stage nuisance learners for DML/CausalForestDML; each tuned by GridSearchCV, best by CV R2/neg-MSE; the best family is then used in the DML.",
+    "lasso": {"alpha": [0.001, 0.01, 0.1, 1.0, 10.0]},
+    "random_forest": {"n_estimators": [300, 600], "max_depth": [null, 5, 10], "min_samples_leaf": [5, 10, 25]},
+    "gradient_boosting": {"n_estimators": [200, 500], "max_depth": [2, 3, 4], "learning_rate": [0.01, 0.05, 0.1]}
+  },
+
+  "feature_engineering": {
+    "_comment": "Candidate transforms enumerated a priori; chosen by AIC/BIC + cross-validated fit + RESET. Scripts must try each and log the winner.",
+    "outcome_transforms": ["level", "log", "asinh", "per_net_sown_ha"],
+    "treatment_transforms": ["cumulative_pumps", "intensity_per_net_sown_ha", "intensity_per_pumpset", "log1p"],
+    "lag_lengths": [0, 1, 2]
+  },
+
+  "did": {
+    "_comment": "Binary treatment-onset threshold is SWEPT, not assumed. Threshold = cumulative KUSUM intensity percentile that defines 'treated start'.",
+    "onset_threshold_pctiles": [50, 60, 70, 75, 80],
+    "estimators": ["sun_abraham_eventstudy", "callaway_santanna", "dcdh_continuous"]
+  },
+
+  "groundwater_interpolation": ["step_carry_forward", "linear"],
+
+  "inference": {
+    "_comment": "Small-N: prefer wild cluster bootstrap (Cameron-Gelbach-Miller 2008).",
+    "method": "wild_cluster_bootstrap",
+    "n_boot": 9999,
+    "cluster": "state"
+  }
+}

@@ -1,0 +1,11 @@
+test,beta,se,pvalue,n,note
+cross_section_dose_gw,-0.01573803618274791,0.10142160769173185,0.8766838369394003,27,FY2024 terminal dose; no back-cast path
+FE_component_B_tubewells,-0.013956470303590925,0.0027797849956211246,5.148315001231806e-07,106,TWFE with income; component-separated treatment
+FE_component_C_tubewells,-0.47222666810506386,0.3735420489662847,0.20616323674363446,106,TWFE with income; component-separated treatment
+FE_component_B_gw,0.04229550120221849,0.023421569511341313,0.07094404175688683,165,TWFE with income; component-separated treatment
+FE_component_C_gw,0.02879410689343018,1.7204374933192734,0.986646826225296,165,TWFE with income; component-separated treatment
+continuous_interaction_kusum_intensity_per_kha,-0.008001044456334115,0.014934390173508649,0.5921338916994014,106,continuous gw_stage and discom interactions (not sparse category)
+continuous_interaction_kusum_x_gw,-7.535059505191526e-05,0.00012220685353419054,0.5375102062425529,106,continuous gw_stage and discom interactions (not sparse category)
+continuous_interaction_kusum_x_discom,-0.016833959458493655,0.021507620865185255,0.4338048150083408,106,continuous gw_stage and discom interactions (not sparse category)
+FE_gw_non_interpolated,0.04909937093639755,0.05081871810612601,0.3339605979929293,109,assessment years only (2020/22/23/24)
+placebo_FE_canal,-0.00807865893162645,0.005909277773950767,0.17158944011717137,119,canal area should be weakly related if solar-pump rebound is GW-specific

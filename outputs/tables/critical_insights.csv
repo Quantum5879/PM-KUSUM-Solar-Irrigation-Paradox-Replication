@@ -1,0 +1,8 @@
+insight,detail,policy_bite,severity
+Leave-one-out sign stability,"100% of LOO IVs stay positive; beta range [0.074, 0.122]",Result is not a single-state artefact if sign_stable is high.,INFO
+Northwestern belt dependence,"Without PB/HR/RJ: beta=0.1011, F=19.27, p=0.00518",Effect survives outside NW — national targeting rule still warranted.,INFO
+Timing of reduced-form signal,FY2019 β=-0.006267 (p=0.024); FY2020 β=-0.005983 (p=0.015); FY2021 β=-0.007104 (p=0.02); FY2022 β=-0.004401 (p=0.027); FY2023 β=-0.004026 (p=0.028); FY2024 β=-0.003979 (p=0.027),"If RF appears only after rollout years, timing supports scheme link over permanent climate endowment.",INFO
+Observables do not overturn tube-well FE,β short=-0.0226 → long=-0.0229; relative shift 1.3%,Extensive-margin consolidation is not an income artefact.,INFO
+Policy magnitude — not just significance,"At p90 intensity, implied stage rise ≈ 0.94 pp; selling gross as net over-claims ≈ 0.28 Mt CO₂/yr; OE rebound offset share ≈ 32% vs safe ≈ 7%",MNRE/state KPIs that cite only gross abatement systematically overstate climate benefit in over-exploited states — the exact geography of deepest KUSUM rollout.,CRITICAL
+Conditional climate finance rule,Net/gross ratio collapses in over-exploited classes under the IV bridge.,Climate/results-based finance for solar irrigation should withhold or haircut payment in CGWB over-exploited blocks unless metering/feeder separation is verified.,CRITICAL
+"Component design, not just 'solar vs not'",Prior IV battery: Component B strong (F≈54); Component C weak.,Diesel-replacement standalone pumps are the groundwater-risk margin; feeder solarisation needs separate evaluation — do not regulate them as one instrument.,MAJOR

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 760" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="data" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d9488"/><stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="build" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="causal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4338ca"/><stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="het" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d97706"/><stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#be123c"/><stop offset="1" stop-color="#e11d48"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+    <style>
+      .box{rx:12;}
+      .lbl{fill:#f8fafc;font-weight:600;}
+      .sub{fill:#e2e8f0;font-weight:400;}
+      .hdr{fill:#94a3b8;font-weight:700;letter-spacing:2px;}
+      .arrow{stroke:#94a3b8;stroke-width:2;fill:none;marker-end:url(#arr);}
+    </style>
+  </defs>
+
+  <rect width="1080" height="760" fill="url(#bg)"/>
+  <text x="540" y="46" text-anchor="middle" font-size="26" class="lbl">The Solar Irrigation Paradox</text>
+  <text x="540" y="72" text-anchor="middle" font-size="14" class="sub">Reproducible analysis pipeline — state panel + district robustness (Python)</text>
+
+  <!-- DATA SOURCES -->
+  <text x="60" y="120" font-size="13" class="hdr">DATA SOURCES</text>
+  <g>
+    <rect x="60" y="132" width="210" height="46" rx="12" fill="url(#data)"/>
+    <text x="76" y="158" font-size="13" class="lbl">PM-KUSUM treatment</text>
+    <text x="76" y="173" font-size="10.5" class="sub">national + state snapshots</text>
+
+    <rect x="60" y="188" width="210" height="46" rx="12" fill="url(#data)"/>
+    <text x="76" y="214" font-size="13" class="lbl">Agri electricity (GWh)</text>
+    <text x="76" y="229" font-size="10.5" class="sub">substitution · FY2016–22</text>
+
+    <rect x="60" y="244" width="210" height="46" rx="12" fill="url(#data)"/>
+    <text x="76" y="270" font-size="13" class="lbl">Irrigation by source</text>
+    <text x="76" y="285" font-size="10.5" class="sub">rebound · tube-wells · 2014–24</text>
+
+    <rect x="60" y="300" width="210" height="46" rx="12" fill="url(#data)"/>
+    <text x="76" y="326" font-size="13" class="lbl">Groundwater stage</text>
+    <text x="76" y="341" font-size="10.5" class="sub">mediator · state + 185 districts</text>
+
+    <rect x="60" y="356" width="210" height="46" rx="12" fill="url(#data)"/>
+    <text x="76" y="382" font-size="13" class="lbl">Diesel baseline · GHI</text>
+    <text x="76" y="397" font-size="10.5" class="sub">IV instrument · RPO · DISCOM</text>
+  </g>
+
+  <!-- BUILD -->
+  <text x="330" y="120" font-size="13" class="hdr">ASSEMBLE</text>
+  <rect x="330" y="190" width="190" height="70" rx="12" fill="url(#build)"/>
+  <text x="346" y="220" font-size="14" class="lbl">Master panel</text>
+  <text x="346" y="238" font-size="10.5" class="sub">state × fiscal-year</text>
+  <text x="346" y="252" font-size="10.5" class="sub">+ data dictionary</text>
+
+  <rect x="330" y="290" width="190" height="64" rx="12" fill="url(#build)"/>
+  <text x="346" y="318" font-size="14" class="lbl">Carbon ledger</text>
+  <text x="346" y="335" font-size="10.5" class="sub">substitution − rebound</text>
+  <text x="346" y="349" font-size="10.5" class="sub">= net CO₂e (EF band)</text>
+
+  <!-- CAUSAL CORE -->
+  <text x="580" y="120" font-size="13" class="hdr">CAUSAL CORE</text>
+  <rect x="580" y="150" width="190" height="40" rx="11" fill="url(#causal)"/>
+  <text x="596" y="175" font-size="12.5" class="lbl">Panel fixed effects</text>
+  <rect x="580" y="198" width="190" height="40" rx="11" fill="url(#causal)"/>
+  <text x="596" y="223" font-size="12.5" class="lbl">Staggered / dose DiD</text>
+  <rect x="580" y="246" width="190" height="40" rx="11" fill="url(#causal)"/>
+  <text x="596" y="271" font-size="12.5" class="lbl">Instrumental variables</text>
+  <rect x="580" y="294" width="190" height="40" rx="11" fill="url(#causal)"/>
+  <text x="596" y="319" font-size="12.5" class="lbl">Channel decomposition</text>
+
+  <!-- HETEROGENEITY -->
+  <text x="580" y="372" font-size="13" class="hdr">WHERE IT FLIPS</text>
+  <rect x="580" y="384" width="190" height="64" rx="12" fill="url(#het)"/>
+  <text x="596" y="410" font-size="13" class="lbl" fill="#1f2937">Heterogeneity</text>
+  <text x="596" y="427" font-size="10.5" fill="#1f2937">causal forest + interactions</text>
+  <text x="596" y="441" font-size="10.5" fill="#1f2937">by DISCOM × GW stress</text>
+
+  <!-- OUTPUTS -->
+  <text x="830" y="120" font-size="13" class="hdr">OUTPUTS</text>
+  <rect x="830" y="150" width="190" height="40" rx="11" fill="url(#out)"/>
+  <text x="846" y="175" font-size="12.5" class="lbl">Fig 1 · the paradox</text>
+  <rect x="830" y="198" width="190" height="40" rx="11" fill="url(#out)"/>
+  <text x="846" y="223" font-size="12.5" class="lbl">Fig 2 · event study</text>
+  <rect x="830" y="246" width="190" height="40" rx="11" fill="url(#out)"/>
+  <text x="846" y="271" font-size="12.5" class="lbl">Fig 3 · decomposition</text>
+  <rect x="830" y="294" width="190" height="40" rx="11" fill="url(#out)"/>
+  <text x="846" y="319" font-size="12.5" class="lbl">Fig 4 · sign-flip map</text>
+  <rect x="830" y="342" width="190" height="40" rx="11" fill="url(#out)"/>
+  <text x="846" y="367" font-size="12.5" class="lbl">CCTS valuation coda</text>
+  <rect x="830" y="390" width="190" height="58" rx="12" fill="#16a34a"/>
+  <text x="846" y="414" font-size="12.5" class="lbl">Integrity +</text>
+  <text x="846" y="431" font-size="11.5" class="sub">Devil's Advocate review</text>
+
+  <!-- arrows -->
+  <path class="arrow" d="M270,310 C300,300 305,250 328,232"/>
+  <path class="arrow" d="M520,225 L576,200"/>
+  <path class="arrow" d="M520,320 L576,260"/>
+  <path class="arrow" d="M520,320 L576,310"/>
+  <path class="arrow" d="M770,315 C800,330 800,400 826,414"/>
+  <path class="arrow" d="M675,338 L675,382"/>
+  <path class="arrow" d="M770,416 L826,416"/>
+  <path class="arrow" d="M770,180 L826,170"/>
+  <path class="arrow" d="M770,228 L826,218"/>
+
+  <!-- principles strip -->
+  <rect x="60" y="640" width="960" height="74" rx="14" fill="#0b1220" stroke="#334155"/>
+  <text x="80" y="668" font-size="13" class="hdr">GOVERNING PRINCIPLES</text>
+  <text x="80" y="694" font-size="13.5" class="sub">▸ No hardcoded parameters — every hyperparameter chosen by cross-validated grid search</text>
+  <text x="80" y="712" font-size="13.5" class="sub">▸ Every non-tuned choice cited to literature   ▸ Assumptions become sensitivity bands   ▸ One-command reproducible</text>
+  <text x="1000" y="700" text-anchor="end" font-size="11" fill="#475569">paper3/ · seed 1502</text>
+</svg>

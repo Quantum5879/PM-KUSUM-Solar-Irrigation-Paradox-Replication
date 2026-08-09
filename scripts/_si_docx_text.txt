@@ -1,0 +1,61 @@
+Supplementary Information
+Do Subsidised Solar Pumps Really Cut Carbon or Shift the Cost to Groundwater?
+Evidence from India's PM-KUSUM
+Harsh Dagar and Gunjan Bhandari
+Division of Dairy Economics, Statistics and Management
+ICAR-National Dairy Research Institute (Deemed University), Karnal, Haryana 132001, India
+ORCID: H.D. https://orcid.org/0009-0008-7394-130X ; G.B. https://orcid.org/0000-0001-6004-7642
+This Supplementary Information accompanies the main article. It contains Supplementary Tables S1-S3 (carbon sensitivity, IV diagnostics, and social-cost ledger) and Supplementary Figures S1-S10 (causal pathway, geographic alignment, event study, paradox scales, component identification, heterogeneous effects, rebound sensitivity, leave-one-out, carbon balance, and governance matrix). Figures are rendered at 400 dpi. Figures 1-4 in the main text correspond to executive visuals V2, V4, V5 and V9.
+Supplementary Tables
+Table S1. Carbon sensitivity matrix
+Gross, rebound and net abatement (Mt CO2/yr) across diesel displacement, pump energy intensity, lift depth and grid emission factor. is_central = 1 marks the paper's central bridge case (600 L, e = 0.004, lift = 20 m, EF = 0.7383).
+
+
+Table S2. IV diagnostics
+Instrumental-variable specifications for groundwater stage and related outcomes. Weak_IV_flag marks first-stage F < 10. The final row summarises leave-one-out sign stability.
+
+
+Table S3. Social cost ledger
+Gross abatement value, rebound cost, net value and over-claim cost (INR crore) at alternative social cost of carbon (INR per tCO2). Zone rows use SCC = 1,500 INR/t.
+
+
+Supplementary Figures
+Figure S1. Causal pathway
+
+Figure S1. Causal pathway. Source: V1_causal_storyboard.png (400 dpi).
+
+Figure S2. Geographic alignment
+
+Figure S2. Geographic alignment. Source: V2_india_dual_choropleth.png (400 dpi).
+
+Figure S3. Event study
+
+Figure S3. Event study. Source: V3_event_ribbon_timeline.png (400 dpi).
+
+Figure S4. The paradox scales
+
+Figure S4. The paradox scales. Source: V4_paradox_balance_scales.png (400 dpi).
+
+Figure S5. Component identification
+
+Figure S5. Component identification. Source: V5_component_power_meters.png (400 dpi).
+
+Figure S6. Heterogeneous effects
+
+Figure S6. Heterogeneous effects. Source: V6_cate_ridges_by_stress.png (400 dpi).
+
+Figure S7. Rebound sensitivity
+
+Figure S7. Rebound sensitivity. Source: V7_rebound_heatmap.png (400 dpi).
+
+Figure S8. Leave-one-out
+
+Figure S8. Leave-one-out. Source: V8_loo_lollipop_spine.png (400 dpi).
+
+Figure S9. Carbon balance
+
+Figure S9. Carbon balance. Source: V9_carbon_balance_sheet.png (400 dpi).
+
+Figure S10. Governance matrix
+
+Figure S10. Governance matrix. Source: V10_governance_matrix.png (400 dpi).

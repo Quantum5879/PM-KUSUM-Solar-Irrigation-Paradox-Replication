@@ -1,0 +1,2 @@
+term,coef,se,p,n,r2,interpretation
+irr_share,89.49068436915925,8.622694091707544,3.1059683133266225e-25,184,0.7828719821468578,DESCRIPTIVE within-state hydro correlation; NOT a KUSUM effect

@@ -1,0 +1,33 @@
+state,compA_sanctioned_MW,compA_installed_MW,compB_sanctioned_no,compB_installed_no,compC_sanctioned_IPS,compC_sanctioned_FLS,compC_installed_IPS_FLS
+Andaman & Nicobar Islands,0,0,34,0,436,0,0
+Andhra Pradesh,0,0,0,0,0,100000,0
+Arunachal Pradesh,0,0,700,577,0,0,0
+Assam,2,0,4000,0,0,0,0
+Bihar,0,0,0,0,0,90000,0
+Chhattisgarh,330,7,0,0,0,10000,0
+Goa,50,0,900,100,0,11000,700
+Gujarat,500,0,18212,11813,0,725000,183728
+Haryana,158,14.61,227655,157073,0,12899,0
+Himachal Pradesh,100,100,1270,959,0,0,0
+Jammu & Kashmir,0,0,5000,2890,0,0,0
+Jharkhand,0,0,52985,35459,0,0,0
+Karnataka,0,0,41365,2334,0,628588,21427
+Kerala,0,0,8,8,3796,25387,13163
+Ladakh,0,0,1400,0,0,0,0
+Madhya Pradesh,1790,52.13,59400,7325,0,345000,16316
+Maharashtra,260,4,555000,419825,0,775000,307194
+Manipur,0,0,1150,78,0,0,0
+Meghalaya,0,0,3035,98,0,0,0
+Mizoram,0,0,1700,40,0,0,0
+Nagaland,0,0,265,65,0,0,0
+Odisha,90,0,16441,5716,0,10000,0
+Puducherry,0,0,72,0,0,0,0
+Punjab,0,0,28000,15025,186,0,0
+Rajasthan,5250,457.25,162914,104574,2035,400000,51335
+Tamil Nadu,14,3,5200,4187,5000,6000,0
+Telangana,1450,0,20000,0,28000,0,0
+Tripura,5,0,10895,4971,3600,0,285
+Uttar Pradesh,1,1,110948,66463,12000,370000,3945
+Uttarakhand,0,0,3685,1367,0,0,0
+West Bengal,0,0,0,0,20,0,20
+India,10000,638.99,1332234,840947,55073,3508874,598113

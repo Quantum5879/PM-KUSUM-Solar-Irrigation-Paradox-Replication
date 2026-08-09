@@ -1,0 +1,31 @@
+{
+  "_comment": "Constants that are NOT data-tuned must each cite a reference (ref_key). Anything without a solid citation is moved to a sensitivity sweep (see *_sensitivity arrays). Verify every ref in the Stage-F integrity pass before it enters the manuscript.",
+
+  "ef_diesel_kgCO2_per_litre": {"value": 2.68, "sensitivity": [2.6, 2.68, 2.7], "ref_key": "IPCC2006_vol2_stationary"},
+  "ef_grid_tCO2_per_MWh": {
+    "value": 0.7383,
+    "variants": {"combined_margin": 0.7383, "build_margin_or_state_mix": "compute_from_CEA_and_grid_mix"},
+    "sensitivity": [0.71, 0.7383, 0.79],
+    "ref_key": "CEA_CO2_baseline_v21_FY2024_25"
+  },
+  "diesel_pump_annual_fuel_litres": {"value": null, "sensitivity": [400, 600, 800],
+    "_comment": "litres/diesel-pump/yr; no single authoritative value -> SWEEP. Cite NSSO/AISI pump-use surveys if a value is adopted."},
+  "pump_energy_kWh_per_m3_per_m_lift": {"value": 0.004, "sensitivity": [0.0035, 0.004, 0.0045],
+    "_comment": "specific energy for groundwater lift; scale by district/state water-table depth.", "ref_key": "hydraulic_pump_power_standard"},
+
+  "cgwb_stage_thresholds_pct": {
+    "safe_upper": 70, "semi_critical_upper": 90, "critical_upper": 100,
+    "ref_key": "CGWB_GEC2015_methodology"
+  },
+
+  "ccts_carbon_price_scenarios_INR_per_tCO2": {
+    "_comment": "CCTS market opens ~Oct 2026; no realized prices yet -> scenario distributions, not point values.",
+    "low": 500, "central": 1500, "high": 4000, "distribution": "triangular"
+  },
+
+  "kusum_back_cast_rule": {
+    "default": "national_annual_additions_allocated_by_latest_snapshot_state_share",
+    "alternatives": ["equal_growth_rate", "linear_to_first_snapshot"],
+    "_comment": "Treatment series construction is a sensitivity dimension; report main + alternatives."
+  }
+}
