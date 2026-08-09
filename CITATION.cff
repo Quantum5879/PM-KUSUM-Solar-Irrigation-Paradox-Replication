@@ -11,10 +11,18 @@ authors:
     given-names: Gunjan
     orcid: "https://orcid.org/0000-0001-6004-7642"
     affiliation: "ICAR-National Dairy Research Institute, Karnal"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-08-09"
+doi: "10.5281/zenodo.21856215"
 license: MIT
 repository-code: "https://github.com/Quantum5879/PM-KUSUM-Solar-Irrigation-Paradox-Replication"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21856215"
+    description: "Zenodo version DOI for release v1.0.1"
+  - type: doi
+    value: "10.5281/zenodo.21856214"
+    description: "Zenodo concept DOI (all versions)"
 type: software
 abstract: >-
   Replication package for the Energy Policy manuscript on India's PM-KUSUM

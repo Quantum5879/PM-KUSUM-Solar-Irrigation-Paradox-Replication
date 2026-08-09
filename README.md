@@ -48,7 +48,13 @@ Optional for map figure V2: `geopandas` and `pyogrio` (already listed in `requir
 
 ## Citation
 
-If you use this package, please cite the paper and this repository (DOI via Zenodo once minted — see `CITATION.cff`).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21856215.svg)](https://doi.org/10.5281/zenodo.21856215)
+
+If you use this package, please cite the paper and this repository:
+
+- **Version DOI (v1.0.1):** https://doi.org/10.5281/zenodo.21856215  
+- **Concept DOI (all versions):** https://doi.org/10.5281/zenodo.21856214  
+- **GitHub:** https://github.com/Quantum5879/PM-KUSUM-Solar-Irrigation-Paradox-Replication
 
 ## Licence
 
